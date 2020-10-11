@@ -7,7 +7,8 @@ const personalMovieDb = {
     genres:[],
     privat:false
 };
-  for (let i = 0; i < 2; i++){
+    let i = 0;
+  while( i < 2 ){
     const  lastViewedFilms = prompt('Один из последних просмотренных фильмов?',''),
            userVotes = prompt('На сколько вы оцените его?','');
         if (lastViewedFilms != null && lastViewedFilms.length != 0 && 
@@ -18,7 +19,7 @@ const personalMovieDb = {
                 i--;
                 console.log('error');
             }
-    
+    i++;
     
 }
   if (personalMovieDb.count <= 10){
